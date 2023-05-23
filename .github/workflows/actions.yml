@@ -10,7 +10,7 @@ on:
       - reopened
   push:
     branches:
-      - master
+      - main
   release:
     types: [created]
 
