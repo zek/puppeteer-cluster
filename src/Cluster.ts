@@ -41,6 +41,7 @@ const DEFAULT_OPTIONS: ClusterOptions = {
     maxConcurrency: 1,
     workerCreationDelay: 0,
     puppeteerOptions: {
+        headless: 'new',
         // headless: false, // just for testing...
     },
     perBrowserOptions: undefined,
