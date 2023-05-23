@@ -23,10 +23,10 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "debug": "^4.3.3"
+    "debug": "^4.3.4"
   },
   "peerDependencies": {
-    "puppeteer": ">=1.5.0"
+    "puppeteer": ">=20.0.0"
   },
   "devDependencies": {
     "@types/debug": "^4.1.8",
