@@ -1,5 +1,5 @@
 {
-  "name": "puppeteer-cluster",
+  "name": "@drtz/puppeteer-cluster",
   "version": "0.23.0",
   "description": "Cluster management for puppeteer",
   "main": "dist/index.js",
@@ -10,12 +10,12 @@
     "coverage": "jest --coverage",
     "dev": "tsc --watch"
   },
-  "author": "Thomas Dondorf",
+  "author": "Zek",
   "repository": {
     "type": "git",
-    "url": "https://github.com/thomasdondorf/puppeteer-cluster.git"
+    "url": "https://github.com/zek/puppeteer-cluster.git"
   },
-  "homepage": "https://github.com/thomasdondorf/puppeteer-cluster",
+  "homepage": "https://github.com/zek/puppeteer-cluster",
   "keywords": [
     "puppeteer",
     "cluster",
