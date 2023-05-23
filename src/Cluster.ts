@@ -120,6 +120,10 @@ export default class Cluster<JobData = any, ReturnData = any> extends EventEmitt
         this.options = {
             ...DEFAULT_OPTIONS,
             ...options,
+            puppeteerOptions: {
+                ...DEFAULT_OPTIONS.puppeteerOptions,
+                ...options.puppeteerOptions,
+            }
         };
 
         if (this.options.monitor) {
