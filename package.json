@@ -10,6 +10,10 @@
     "coverage": "jest --coverage",
     "dev": "tsc --watch"
   },
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
   "author": "Zek",
   "repository": {
     "type": "git",
