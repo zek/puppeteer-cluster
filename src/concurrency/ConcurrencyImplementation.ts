@@ -1,5 +1,6 @@
 
 import { Page, LaunchOptions } from 'puppeteer';
+import Job from "../Job";
 
 /**
  * ABSTRACT CLASS Needs to be implemented to manage one or more browsers via puppeteer instances
@@ -44,7 +45,7 @@ export default abstract class ConcurrencyImplementation {
  * In case maxWorkers is set to 4, 4 workers will be created.
  */
 export interface WorkerInstance {
-    jobInstance: () => Promise<JobInstance>;
+    jobInstance: (job: Job<any, any>) => Promise<JobInstance>;
 
     /**
      * Closes the worker (called when the cluster is about to shut down)
