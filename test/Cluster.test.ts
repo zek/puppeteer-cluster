@@ -621,7 +621,9 @@ describe('options', () => {
             }
 
             const cluster = await Cluster.launch({
-                concurrency: CustomConcurrency,
+                concurrency: (options: LaunchOptions, puppeteer: any)=>{
+                    return new CustomConcurrency(options, puppeteer)
+                }, // use one of the existing implementations
                 puppeteerOptions: { args: ['--no-sandbox'] },
                 maxConcurrency: 1,
             });
@@ -723,7 +725,9 @@ describe('options', () => {
 
             const cluster = await Cluster.launch({
                 perBrowserOptions,
-                concurrency: TestConcurrency,
+                concurrency: (options: LaunchOptions, puppeteer: any)=>{
+                    return new TestConcurrency(options, puppeteer)
+                }, // use one of the existing implementations
                 maxConcurrency: 1,
             });
             cluster.on('taskerror', (err) => {
