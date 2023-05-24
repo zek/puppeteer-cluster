@@ -79,6 +79,12 @@ export interface ResourceData {
     [key: string]: any;
 }
 
+export type ConcurrencyImplementationFnType = (
+    options: LaunchOptions,
+    puppeteer: any,
+) => ConcurrencyImplementation;
+
+
 export type ConcurrencyImplementationClassType = new (
     options: LaunchOptions,
     puppeteer: any,
