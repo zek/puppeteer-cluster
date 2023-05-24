@@ -1,6 +1,6 @@
 {
   "name": "@drtz/puppeteer-cluster",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Cluster management for puppeteer",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
