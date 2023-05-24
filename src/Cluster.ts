@@ -60,6 +60,7 @@ interface TaskFunctionArguments<JobData> {
     worker: {
         id: number;
     };
+    [key: string]: any;
 }
 
 export type TaskFunction<JobData, ReturnData> = (
